@@ -1,4 +1,4 @@
-Senior Front End Developer skilled in UX/UI design. 20+ years of professional experience.
+**Senior Front End Developer** skilled in UX/UI design. 20+ years of professional experience.
 
 TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js\
 Funcional Programming / fp-ts / Testing / E2E Cypress / React Testing Library\
