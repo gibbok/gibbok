@@ -1,7 +1,7 @@
 Senior Front End Developer skilled in UX/UI design.\
 20+ years of professional experience.
 
-TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Programming / fp-ts / Testing / E2E Cypress / React Testing Library / CSS3 / styled-components / HTML / MUI / Web Animations / ASP.NET / WPF / C# / SEO
+TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Programming / fp-ts / Testing / E2E Cypress / React Testing Library / CSS3 / TailwindCSS  / styled-components / HTML / MUI / Web Animations / ASP.NET / WPF / C# / SEO
 
 [![gibbok's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=gibbok&count_private=true&show_icons=true)](https://github.com/gibbok)  
 
