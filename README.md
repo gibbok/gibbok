@@ -3,7 +3,7 @@ Senior Front End Developer skilled in UX/UI design.\
 
 Author of [The Concise TypeScript Book](https://github.com/gibbok/typescript-book).
 
-TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Programming / fp-ts / Testing / E2E Cypress / React Testing Library / GraphQL / CSS3 / TailwindCSS  / styled-components / HTML / MUI / Web Animations / ASP.NET / WPF / C# / SEO / Bash / Docker / CI / Adobe Creative Suite / Figma
+TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Programming / fp-ts / Testing / E2E Cypress / React Testing Library / GraphQL / CSS3 / TailwindCSS  / styled-components / HTML / MUI / Web Animations / ASP.NET / WPF / C# / SEO / Bash / Docker / CI / Adobe Creative Suite / Figma / SQL / Python / Machine Learning
 
 [![gibbok's GitHub stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=gibbok&count_private=true&show_icons=true)](https://github.com/gibbok)  
 
