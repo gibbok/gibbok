@@ -1,4 +1,4 @@
-Senior Front End Developer skilled in UX/UI design.\
+Staff Frontend Engineer skilled in UX/UI design.\
 20+ years of professional experience.
 
 Author of [The Concise TypeScript Book](https://github.com/gibbok/typescript-book).
