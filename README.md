@@ -5,8 +5,7 @@ Author of [The Concise TypeScript Book](https://github.com/gibbok/typescript-boo
 
 TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Programming / fp-ts / Testing / E2E Cypress / Playwright / React Testing Library / GraphQL / CSS3 / TailwindCSS  / styled-components / HTML5 / MUI / Web Animations / ASP.NET / WPF / C# / SEO / Hugo / Jamstack / Go / Bash / Docker / CI / Adobe Creative Suite / Figma / SQL / Python / Machine Learning / AI
 
-![gibbok github-stats](https://stats.hyo.dev/api/github-stats-advanced?login=gibbok)
-![gibbok github-trophies](https://stats.hyo.dev/api/github-trophies?login=gibbok)
+<a href="https://stats.hyo.dev/stats/gibbok"><img src="https://stats.hyo.dev/api/github-trophies?login=gibbok" width="600" /></a>
 
 [![GibboK's GitHub stats](https://github-readme-stats.vercel.app/api?username=gibbok&hide=contribs)](https://github.com/gibbok)
 
