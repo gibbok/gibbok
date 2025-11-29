@@ -9,8 +9,6 @@ TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Progr
 
 <img alt="github trophies" class="w-full mx-[4px] m-b[6px]" src="https://stats.hyo.dev/api/github-trophies?login=gibbok">
 
-<img alt="github trophies" class="w-full mx-[4px] m-b[6px]" src="https://stats.hyo.dev/api/github-trophies?login=gibbok">
-
 ---
 
 [![GibboK's GitHub stats](https://github-readme-stats.vercel.app/api?username=gibbok&hide=contribs)](https://github.com/gibbok)
