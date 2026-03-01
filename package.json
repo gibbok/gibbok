@@ -1,0 +1,24 @@
+{
+  "name": "gibbok",
+  "version": "1.0.0",
+  "description": "GibboK Homepage",
+  "homepage": "https://github.com/gibbok/gibbok#readme",
+  "bugs": {
+    "url": "https://github.com/gibbok/gibbok/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gibbok/gibbok.git"
+  },
+  "license": "ISC",
+  "author": "Simone Poggiali",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx http-server",
+    "deploy": "npx gh-pages -d ./"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
