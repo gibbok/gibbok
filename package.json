@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx http-server",
+    "deploy": "npx gh-pages -d ./"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
