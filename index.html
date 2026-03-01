@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GibboK - Staff Frontend Engineer</title>
+    <link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
+    <script src="path-to-js/silktide-consent-manager.js"></script>
+    <script>
+        silktideCookieBannerManager.updateCookieBannerConfig({
+            background: {
+                showBackground: true
+            },
+            cookieIcon: {
+                position: "bottomLeft"
+            },
+            cookieTypes: [
+                {
+                    id: "necessary",
+                    name: "Necessary",
+                    description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
+                    required: true,
+                    onAccept: function () {
+                        console.log('Add logic for the required Necessary here');
+                    }
+                },
+                {
+                    id: "analytics",
+                    name: "Analytics",
+                    description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
+                    defaultValue: true,
+                    onAccept: function () {
+                        gtag('consent', 'update', {
+                            analytics_storage: 'granted',
+                        });
+                        dataLayer.push({
+                            'event': 'consent_accepted_analytics',
+                        });
+                    },
+                    onReject: function () {
+                        gtag('consent', 'update', {
+                            analytics_storage: 'denied',
+                        });
+                    }
+                },
+                {
+                    id: "advertising",
+                    name: "Advertising",
+                    description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
+                    onAccept: function () {
+                        gtag('consent', 'update', {
+                            ad_storage: 'granted',
+                            ad_user_data: 'granted',
+                            ad_personalization: 'granted',
+                        });
+                        dataLayer.push({
+                            'event': 'consent_accepted_advertising',
+                        });
+                    },
+                    onReject: function () {
+                        gtag('consent', 'update', {
+                            ad_storage: 'denied',
+                            ad_user_data: 'denied',
+                            ad_personalization: 'denied',
+                        });
+                    }
+                }
+            ],
+            text: {
+                banner: {
+                    description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
+                    acceptAllButtonText: "Accept all",
+                    acceptAllButtonAccessibleLabel: "Accept all cookies",
+                    rejectNonEssentialButtonText: "Reject non-essential",
+                    rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
+                    preferencesButtonText: "Preferences",
+                    preferencesButtonAccessibleLabel: "Toggle preferences"
+                },
+                preferences: {
+                    title: "Customize your cookie preferences",
+                    description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
+                    creditLinkText: "Get this banner for free",
+                    creditLinkAccessibleLabel: "Get this banner for free"
+                }
+            }
+        });
+    </script>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f5f5f5;
         }
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -23,21 +107,25 @@
             background: white;
             min-height: 100vh;
         }
+
         header {
             text-align: center;
             padding: 40px 0;
             border-bottom: 2px solid #e0e0e0;
         }
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
             color: #2c3e50;
         }
+
         .subtitle {
             font-size: 1.2em;
             color: #555;
             margin-bottom: 20px;
         }
+
         .book-link {
             display: inline-block;
             margin: 20px 0;
@@ -52,6 +140,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .book-link::before {
             content: '';
             position: absolute;
@@ -59,16 +148,19 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
             transition: left 0.5s;
         }
+
         .book-link:hover::before {
             left: 100%;
         }
+
         .book-link:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
         }
+
         .skills {
             margin: 40px 0;
             padding: 30px;
@@ -76,20 +168,24 @@
             border-radius: 8px;
             line-height: 2;
         }
+
         .stats {
             margin: 40px 0;
             text-align: center;
         }
+
         .stats img {
             max-width: 100%;
             height: auto;
             margin: 10px 0;
             border-radius: 5px;
         }
+
         .stackoverflow {
             text-align: center;
             margin: 40px 0;
         }
+
         hr {
             margin: 40px 0;
             border: none;
@@ -97,6 +193,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -110,25 +207,32 @@
 
         <section class="skills">
             <strong>Technologies & Skills:</strong><br>
-            TypeScript / JavaScript / React.js / Next.js / Redux / Node.js / Functional Programming / fp-ts / Testing / E2E Cypress / Playwright / React Testing Library / GraphQL / CSS3 / TailwindCSS / styled-components / HTML5 / MUI / Web Animations / ASP.NET / WPF / C# / SEO / Hugo / Jamstack / Go / Bash / Docker / CI / Adobe Creative Suite / Figma / SQL / Python / Machine Learning / AI
+            TypeScript / JavaScript / React.js / Next.js / Redux / Node.js / Functional Programming / fp-ts / Testing /
+            E2E Cypress / Playwright / React Testing Library / GraphQL / CSS3 / TailwindCSS / styled-components / HTML5
+            / MUI / Web Animations / ASP.NET / WPF / C# / SEO / Hugo / Jamstack / Go / Bash / Docker / CI / Adobe
+            Creative Suite / Figma / SQL / Python / Machine Learning / AI
         </section>
 
         <section class="stats">
-            <img src="https://github-readme-stats-fast.vercel.app/api?username=gibbok&show_icons=true" alt="GitHub Stats">
-            
+            <img src="https://github-readme-stats-fast.vercel.app/api?username=gibbok&show_icons=true"
+                alt="GitHub Stats">
+
             <hr>
-            
+
             <img src="https://github-readme-stats-fast.vercel.app/api/streak?username=gibbok" alt="GitHub Streak">
-            <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=gibbok&layout=compact" alt="Top Languages">
+            <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=gibbok&layout=compact"
+                alt="Top Languages">
         </section>
 
         <hr>
 
         <section class="stackoverflow">
             <a href="https://stackoverflow.com/users/379008/gibbok" target="_blank">
-                <img src="https://stackoverflow.com/users/flair/379008.png" width="208" height="58" alt="Stack Overflow Profile">
+                <img src="https://stackoverflow.com/users/flair/379008.png" width="208" height="58"
+                    alt="Stack Overflow Profile">
             </a>
         </section>
     </div>
 </body>
+
 </html>
