@@ -10,6 +10,7 @@ TypeScript / JavaScript / React.js / Next.js / Redux / Node.Js / Funcional Progr
 ---
 
 ![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/streak?username=gibbok)
+
 ![GitHub Stats](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=gibbok&layout=compact)
 
 ---
